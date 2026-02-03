@@ -11,7 +11,13 @@ export default function OrdersPage() {
     }))
 
     return (
-        <div className="space-y-6">
+        <div className="space-y-6 mt-6">
+            <div className="flex items-center justify-between">
+                <h2 className="text-2xl font-semibold">Đơn mua của tôi</h2>
+                <span className="px-3 py-1 rounded-md border text-sm bg-white">
+                    {ordersWithBike.length} đơn hàng
+                </span>
+            </div>
             {ordersWithBike.map(order => (
                 <OrderItem key={order.id} order={order} />
             ))}
