@@ -31,9 +31,9 @@ export default function OrderItem({ order }) {
 
     return (
 
-        <div className="border rounded-2xl p-5 bg-white space-y-4">
+        <div className="border rounded-2xl p-8 bg-white space-y-4">
             {/* ===== HEADER ===== */}
-            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex gap-2 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex items-center gap-2">
                     <Package size={16} className="text-gray-500" />
                     <span className="font-semibold text-sm">Đơn hàng #{order.id}</span>
@@ -56,7 +56,7 @@ export default function OrderItem({ order }) {
             </div>
 
             {/* ===== ITEM ===== */}
-            <div className="flex flex-col gap-4 lg:flex-row lg:items-start">
+            <div className="flex gap-4 lg:flex-row lg:items-start">
                 <div className="flex gap-4 flex-1">
                     <img
                         src={bike.images?.[0]}

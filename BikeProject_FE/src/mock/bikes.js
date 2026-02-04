@@ -8,6 +8,7 @@ const bikes = [
         frameSize: 'L',
         condition: 'Đã qua sử dụng',
         price: 12500000,
+        verified: true, // ✅ thêm
         images: [
             'https://images.unsplash.com/photo-1604677657548-4ced0c4f40c6',
             'https://images.unsplash.com/photo-1595433707802-1f0a1b5b0d5f',
@@ -16,6 +17,7 @@ const bikes = [
         createdAt: '2026-01-28',
         views: 234,
     },
+
     {
         id: 'b2',
         sellerId: 'u2',
@@ -25,6 +27,7 @@ const bikes = [
         frameSize: 'M',
         condition: 'Mới',
         price: 18000000,
+        verified: false, // ❌ chưa kiểm định
         images: [
             'https://images.unsplash.com/photo-1684248079343-1e6af2a3d1bf',
             'https://images.unsplash.com/photo-1529429617124-a2e0b7e0e3b6',
@@ -33,6 +36,7 @@ const bikes = [
         createdAt: '2026-01-30',
         views: 156,
     },
+
     {
         id: 'b3',
         sellerId: 'u5',
@@ -42,6 +46,7 @@ const bikes = [
         frameSize: 'M',
         condition: 'Đã qua sử dụng',
         price: 35000000,
+        verified: true,
         images: [
             'https://images.unsplash.com/photo-1692668696811-90976b749459',
             'https://images.unsplash.com/photo-1603380353725-f8a4d39cc41e',
@@ -50,6 +55,7 @@ const bikes = [
         createdAt: '2026-02-01',
         views: 412,
     },
+
     {
         id: 'b4',
         sellerId: 'u3',
@@ -59,6 +65,7 @@ const bikes = [
         frameSize: 'S',
         condition: 'Mới',
         price: 15500000,
+        verified: true,
         images: [
             'https://images.unsplash.com/photo-1549298916-b41d501d3772',
             'https://images.unsplash.com/photo-1518655048521-f130df041f66',
@@ -67,6 +74,7 @@ const bikes = [
         createdAt: '2026-02-02',
         views: 98,
     },
+
     {
         id: 'b5',
         sellerId: 'u4',
@@ -76,6 +84,7 @@ const bikes = [
         frameSize: 'M',
         condition: 'Đã qua sử dụng',
         price: 9800000,
+        verified: false,
         images: [
             'https://images.unsplash.com/photo-1507035895480-2b3156c31fc8',
             'https://images.unsplash.com/photo-1519125323398-675f0ddb6308',
@@ -84,6 +93,7 @@ const bikes = [
         createdAt: '2026-01-25',
         views: 76,
     },
+
     {
         id: 'b6',
         sellerId: 'u6',
@@ -93,6 +103,7 @@ const bikes = [
         frameSize: 'L',
         condition: 'Mới',
         price: 22000000,
+        verified: true,
         images: [
             'https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62',
             'https://images.unsplash.com/photo-1520975922215-6c1fbc6c02b2',
@@ -101,6 +112,7 @@ const bikes = [
         createdAt: '2026-02-03',
         views: 189,
     },
+
     {
         id: 'b7',
         sellerId: 'u7',
@@ -110,6 +122,7 @@ const bikes = [
         frameSize: 'M',
         condition: 'Đã qua sử dụng',
         price: 14000000,
+        verified: false,
         images: [
             'https://images.unsplash.com/photo-1622560480605-d83c853bc5c3',
             'https://images.unsplash.com/photo-1612119961954-31cfe18a64c8',

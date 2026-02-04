@@ -1,4 +1,3 @@
-
 import OrderItem from '../components/order/OrderItem'
 import orders from '../../../mock/orders'
 import bikes from '../../../mock/bikes'

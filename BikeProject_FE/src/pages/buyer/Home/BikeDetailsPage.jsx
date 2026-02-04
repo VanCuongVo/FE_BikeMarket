@@ -4,7 +4,7 @@ import SearchSection from '../components/search/SearchSection'
 import BikeList from '../components/bike/BikeList'
 import { filterBikes } from '../../../services/filterBikes'
 
-function BuyerDetails() {
+function BikeDetailPage() {
     const [filters, setFilters] = useState({})
 
     const [keyword, setKeyword] = useState(filters.keyword || '')
@@ -21,4 +21,4 @@ function BuyerDetails() {
     )
 }
 
-export default BuyerDetails
+export default BikeDetailPage
