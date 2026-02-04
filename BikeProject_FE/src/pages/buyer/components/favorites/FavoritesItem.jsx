@@ -1,7 +1,7 @@
 import { Eye, Heart, ShieldCheck, Trash2 } from 'lucide-react'
 import React from 'react'
 
-function HeartItem({ bike }) {
+function FavoritesItem({ bike }) {
     return (
         <div className="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
 
@@ -80,4 +80,4 @@ function HeartItem({ bike }) {
         </div>
     )
 }
-export default HeartItem
+export default FavoritesItem

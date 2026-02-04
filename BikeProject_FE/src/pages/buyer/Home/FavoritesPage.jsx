@@ -1,6 +1,7 @@
 import bikes from "../../../mock/bikes"
 import favorites from "../../../mock/favorites"
-import HeartItem from "../components/heart/HeartItem"
+import FavoritesItem from "../components/favorites/FavoritesItem"
+
 
 export default function FavoritesPage() {
     const favoriteBikes = favorites.map(favorite => ({
@@ -19,7 +20,7 @@ export default function FavoritesPage() {
             {/* Grid  */}
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {favoriteBikes.map(favorite => (
-                    <HeartItem key={favorite.id} bike={favorite.bike} />
+                    <FavoritesItem key={favorite.id} bike={favorite.bike} />
                 ))}
             </div>
         </div>
