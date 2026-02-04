@@ -1,4 +1,4 @@
-import { Heart, Eye } from 'lucide-react'
+import { Heart, Eye, ShieldCheck } from 'lucide-react'
 
 function BikeCard({ bike }) {
     return (
@@ -11,13 +11,13 @@ function BikeCard({ bike }) {
                     className="w-full h-56 object-cover"
                 />
 
-                {/* Badge kiểm định */}
-                {bike.inspected && (
-                    <span className="absolute top-3 left-3 bg-green-500 text-white text-xs px-3 py-1 rounded-full">
-                        ✔ Đã kiểm định
+                {/* Đã kiểm định */}
+                {bike.verified && (
+                    <span className="absolute top-3 left-3 bg-green-100 text-green-600 text-xs px-2 py-1 rounded-full flex items-center gap-1">
+                        <ShieldCheck size={14} />
+                        Đã kiểm định
                     </span>
                 )}
-
                 {/* Heart */}
                 <button className="absolute top-3 right-3 bg-white p-2 rounded-full shadow">
                     <Heart size={16} />
