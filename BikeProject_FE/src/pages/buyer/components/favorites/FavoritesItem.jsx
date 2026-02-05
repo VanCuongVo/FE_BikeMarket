@@ -1,7 +1,10 @@
 import { Eye, Heart, ShieldCheck, Trash2 } from 'lucide-react'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 function FavoritesItem({ bike }) {
+
+    const navigate = useNavigate()
     return (
         <div className="bg-white rounded-xl shadow-sm overflow-hidden flex flex-col">
 
@@ -68,7 +71,10 @@ function FavoritesItem({ bike }) {
 
                 {/* Actions */}
                 <div className="flex items-center gap-2">
-                    <button className="flex-1 bg-black text-white py-2 rounded-lg text-sm font-medium">
+                    <button
+                        onClick={() => navigate(`/buyer/bikes/${bike.id}`)}
+                        className="w-full bg-black text-white py-2 rounded-lg hover:opacity-90"
+                    >
                         Xem chi tiết
                     </button>
 

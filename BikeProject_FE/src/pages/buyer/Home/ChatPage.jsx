@@ -20,13 +20,11 @@ function ChatPage() {
                     onSelect={setSelectedConversation}
                     selectedId={selectedConversation?.id}
                 />
-
                 {/* Cột phải */}
                 <ChatWindow conversation={selectedConversation} />
+                
             </div>
-
         </div>
-
     )
 }
 

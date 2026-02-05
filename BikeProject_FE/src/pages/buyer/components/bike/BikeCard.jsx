@@ -1,6 +1,8 @@
 import { Heart, Eye, ShieldCheck } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 
 function BikeCard({ bike }) {
+    const navigate = useNavigate()
     return (
         <div className="bg-white rounded-2xl shadow hover:shadow-lg transition overflow-hidden">
             {/* IMAGE */}
@@ -57,8 +59,10 @@ function BikeCard({ bike }) {
                     </span>
                 </div>
 
-                {/* Button */}
-                <button className="w-full bg-black text-white py-2 rounded-lg hover:opacity-90">
+                <button
+                    onClick={() => navigate(`/buyer/bikes/${bike.id}`)}
+                    className="w-full bg-black text-white py-2 rounded-lg hover:opacity-90"
+                >
                     Xem chi tiết
                 </button>
             </div>

@@ -1,10 +1,6 @@
-import {
-    Search,
-    ShoppingCart,
-    MessageSquare,
-    Heart
-} from "lucide-react"
-import { NavLink } from 'react-router-dom';
+import { Heart, MessageSquare, Search, ShoppingCart } from "lucide-react";
+import { NavLink } from "react-router-dom";
+
 export default function Header() {
     return (
         <header className="h-16 bg-white border-b">

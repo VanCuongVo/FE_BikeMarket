@@ -1,6 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import Header from '../../../layouts/Header'
+import Header from '../../../layouts/Buyer/header'
+
 
 function BuyerLayout() {
     return (
@@ -12,5 +13,4 @@ function BuyerLayout() {
         </>
     )
 }
-
 export default BuyerLayout
