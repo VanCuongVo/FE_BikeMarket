@@ -1,5 +1,3 @@
-
-
 function BikeGallery({ images }) {
     return (
         <div className="rounded-xl overflow-hidden border">
@@ -10,5 +8,4 @@ function BikeGallery({ images }) {
         </div>
     )
 }
-
 export default BikeGallery

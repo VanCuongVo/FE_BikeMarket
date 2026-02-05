@@ -16,9 +16,7 @@ function BikeInfo({ bike }) {
                 <p><b>Khung:</b> {bike.frameSize}</p>
                 <p><b>Tình trạng:</b> {bike.condition}</p>
             </div>
-
         </div>
     )
 }
-
 export default BikeInfo

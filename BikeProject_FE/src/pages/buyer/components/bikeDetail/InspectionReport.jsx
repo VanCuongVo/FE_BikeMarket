@@ -11,5 +11,4 @@ function InspectionReport({ inspection }) {
         </div>
     )
 }
-
 export default InspectionReport
