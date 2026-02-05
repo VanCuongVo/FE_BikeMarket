@@ -108,7 +108,7 @@ export default function OrderItem({ order }) {
                 </button>
 
                 <button
-                    onClick={() => navigate(`/bikes/${bike.id}`)}
+                    onClick={() => navigate(`/buyer/bikes/${bike.id}`)}
                     className="flex items-center gap-1 border px-3 py-1 rounded text-sm hover:bg-gray-50"
                 >
                     <Eye size={16} /> Xem chi tiết xe
